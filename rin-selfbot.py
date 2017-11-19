@@ -18,7 +18,7 @@ sys.setdefaultencoding('utf-8')
 
 helpmsg ="""
 ================================
-                    CORN SELFBOT
+                    SELFBOT MUNGUT
 ================================
 
 ➣Mid @ - Show MID by tag
@@ -40,10 +40,8 @@ helpmsg ="""
 ➣Invite [mid] - invite by mid
 ➣Gname [name] - change group name
 ➣Gift - send gift
-➣Me - send contact myself
-
 =================================
-http://line.me/ti/p/~raghdahassa.p.c
+http://bit.ly/Rin-chan
 =================================
 """
 KAC=[cl,ki,kk,kc]
@@ -53,7 +51,7 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid]
-admin=[""]
+admin=["udeffca3236752ae760aefc8be60b2e93"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -113,7 +111,7 @@ def autolike():
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
           try:
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Corn. \n\n http://line.me/ti/p/~raghdahassa.p.c")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Sudah dilike, likeback TL \n\n creator: bit.ly/Rin-chan")
             print "Like"
           except:
             pass
